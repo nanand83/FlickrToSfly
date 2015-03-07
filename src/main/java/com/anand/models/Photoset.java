@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlElement;
  
+import java.util.*;
 
 @XmlRootElement(name="photoset")
 public class Photoset {
@@ -76,24 +77,25 @@ public class Photoset {
       this.farm = value;
    }
  
-   public int getPhotos() {
-      return this.photos;
+   public int getPhotoCount() {
+      return this.photoCount;
    }
  
   	@XmlAttribute(name="photos")
-   public void setPhotos(int value) {
-      this.photos = value;
+   public void setPhotoCount(int value) {
+      this.photoCount = value;
    }
  
-   public int getVideos() {
-      return this.videos;
+   public int getVideoCount() {
+      return this.videoCount;
    }
  
   	@XmlAttribute(name="videos")
-   public void setVideos(int value) {
-      this.videos = value;
+   public void setVideoCount(int value) {
+      this.videoCount = value;
    }
-     public String getTitle() {
+  
+   public String getTitle() {
       return this.title;
    }
  
@@ -109,5 +111,14 @@ public class Photoset {
   	@XmlElement(name="description")
    public void setDescription(String value) {
       this.description = value;
+   }
+  
+  	public List<Photo> getPhotos(){
+     	return photos;
+   }
+  	
+  	@XmlElement(name="photo")
+  	public void setPhotos(List<Photo> photos) {
+     	this.photos = photos;
    }
 }
