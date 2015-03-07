@@ -29,7 +29,7 @@ public class FlickrClient {
      	Token token = null;
      	try {
         if (doesTokenExist) {
-				token = dbUtils.getTokenValue(tokenType);
+				token = (Token)dbUtils.getTokenValue(tokenType);
         }  else {
 				System.out.println("Token of type "+tokenType+" does not exist in Db");
           	System.exit(0);
@@ -58,7 +58,7 @@ public class FlickrClient {
   
   	public static void main(String args[]) {
      FlickrClient client = new FlickrClient();
-     client.printPhotoUrls();
+     client.printPhotoUrls("Vidushi Namakaranam");
    }
   
 }

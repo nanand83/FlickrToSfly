@@ -18,14 +18,16 @@ public class Photoset {
  
    private int farm;
  
-   private int photos;
+   private int photoCount;
  
-   private int videos;
+   private int videoCount;
   
   	private String title;
   
   	private String description;
  
+  	private List<Photo> photos;
+  
    public Photoset() {
    }
  
