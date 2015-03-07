@@ -51,7 +51,7 @@ public class FlickrClient {
       request.addQuerystringParameter("method", method);
      	if (paramMap!=null) {
         for (String key : paramMap.keySet()) {
-           request.addQuerystringParameter("key", String.valueOf(paramMap.get(key)));
+           request.addQuerystringParameter(key, String.valueOf(paramMap.get(key)));
         }
       }
      	
@@ -82,6 +82,7 @@ public class FlickrClient {
         	paramMap.put("photoset_id", photoset.getId());
         	paramMap.put("extras", "url_o");
          photosResponse = getResponseFromApi("flickr.photosets.getPhotos", paramMap);
+        	//System.out.println(photosResponse);
          photos = XmlUtils.unmarshalPhotos(photosResponse);
        } catch(Exception e) {
          System.out.println("Exception while getting response from flickr api- getPhotos");

@@ -9,7 +9,7 @@ public class Photo {
  
    private long id;
  
-   private long secret;
+   private String secret;
  
    private int server;
  
@@ -31,12 +31,12 @@ public class Photo {
       this.id = value;
    }
  
-   public long getSecret() {
+   public String getSecret() {
       return this.secret;
    }
  
   	@XmlAttribute(name="secret")
-   public void setSecret(long value) {
+   public void setSecret(String value) {
       this.secret = value;
    }
  
