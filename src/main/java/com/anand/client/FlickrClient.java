@@ -11,8 +11,8 @@ import org.scribe.oauth.*;
 import java.util.*;
 
 public class FlickrClient {
-  	private static final String apiKey = "0fd992b0fff19e803daec389405acf52";
-  	private static final String apiSecret = "dd718bff9c133771";
+  	private static final String apiKey = "xxxxxxxxxxxxxxxxxxx";
+  	private static final String apiSecret = "xxxxxxxxxxxxxxx";
   
   	private static final String PROTECTED_RESOURCE_URL = "https://api.flickr.com/services/rest/";
   	private OAuthService service = null;

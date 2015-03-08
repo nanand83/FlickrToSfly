@@ -5,7 +5,7 @@ import java.net.*;
 import java.io.*;
 
 public class DBUtils {
-  private static final String DATABASE_URL = "postgres://obsyetawdctbrh:KG6i6SyYHjXaPHYWQfNqkm2imb@ec2-54-204-39-187.compute-1.amazonaws.com:5432/dbcokog704adr7";
+  private static final String DATABASE_URL = "postgres://XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx";
   
   public DBUtils() {
     super();
